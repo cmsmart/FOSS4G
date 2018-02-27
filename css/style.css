@@ -6549,7 +6549,6 @@ header {
   padding-left: 0px; }
 
 .view-sponsors h3 {
-  color: #ace1ff;
   text-transform: uppercase;
   font-size: 1.8em;
   margin-bottom: 40px;
@@ -6696,12 +6695,14 @@ footer {
     .front .region-front-blocks .block {
       width: 100%;
       margin-bottom: 20px; }
-  .front .view-sponsors .wrap {
+
+  .view-sponsors .wrap,
+  .view-sponsors .views-row {
     padding-top: 0px; }
-  .front .view-sponsors .field-content {
+  .view-sponsors .field-content {
     position: static;
     padding: 0px; }
-    .front .view-sponsors .field-content img {
+    .view-sponsors .field-content img {
       margin-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
