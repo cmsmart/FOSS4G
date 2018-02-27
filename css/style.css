@@ -6461,20 +6461,11 @@ a.icon-after .glyphicon, a .glyphicon.icon-after {
 html, body {
   font-size: 100%; }
 
-.mapscroll {
-  background-image: url(/foss4g/sites/all/themes/foss4g/images/melways.png);
-  background-attachment: fixed;
-  height: 50px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  opacity: 0.4;
-  border-top: 1px solid #444444;
-  border-bottom: 1px solid #444444; }
+body {
+  margin-top: 65px; }
 
 header {
-  margin-bottom: 20px;
-  position: relative;
-  top: 65px; }
+  margin-bottom: 20px; }
 
 .navbar.container {
   margin-top: 0; }
@@ -6487,7 +6478,8 @@ header {
     position: fixed;
     right: 0;
     left: 0;
-    z-index: 1030; }
+    z-index: 1030;
+    top: 0; }
 
 .navbar {
   background-color: inherit;
@@ -6527,6 +6519,16 @@ header {
   border-left: 4px solid transparent;
   text-indent: -999em; }
 
+.mapscroll {
+  background-image: url(/foss4g/sites/all/themes/foss4g/images/melways.png);
+  background-attachment: fixed;
+  height: 50px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.4;
+  border-top: 1px solid #444444;
+  border-bottom: 1px solid #444444; }
+
 #logo {
   display: inline-block;
   background: #ace1ff;
@@ -6542,17 +6544,23 @@ header {
   color: #666666; }
 
 .breadcrumb {
-  background-color: inherit; }
+  background-color: inherit;
+  font-size: 14px;
+  padding-left: 0px; }
+
+.view-sponsors h3 {
+  color: #ace1ff;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  margin-bottom: 40px;
+  margin-top: 30px; }
 
 footer {
   background: #00323b;
   color: white; }
 
-.front .main-container {
-  position: relative;
-  top: 45px; }
-  .front .main-container .region {
-    margin-top: 100px; }
+.front .main-container .region {
+  margin-top: 100px; }
 .front .region-content p {
   font-size: 1.4em;
   text-align: center; }
@@ -6569,9 +6577,11 @@ footer {
   .front .region-front-blocks h2 {
     margin-bottom: 20px;
     border-bottom: 3px dotted #d5d5d5;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-top: 50px; }
   .front .region-front-blocks .block {
     width: 30%;
+    padding: 30px;
     border: thin solid #00b5d4; }
   .front .region-front-blocks #block-block-3 {
     background-image: url(/foss4g/sites/all/themes/foss4g/images/tram.png);
@@ -6606,13 +6616,15 @@ footer {
   font-size: 1.8em;
   margin-bottom: 40px;
   margin-top: 30px; }
-.front .view-sponsors h3 {
+
+.view-sponsors h3 {
   color: #ace1ff; }
-.front .view-sponsors ul {
+.view-sponsors ul {
   padding: 0;
   margin: 0 auto;
   text-align: center; }
-.front .view-sponsors .wrap {
+.view-sponsors .wrap,
+.view-sponsors .views-row {
   padding: 20px;
   list-style: none;
   position: relative;
@@ -6622,7 +6634,7 @@ footer {
   min-width: 270px;
   height: 0;
   padding-top: 18%; }
-.front .view-sponsors .field-content {
+.view-sponsors .field-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6632,7 +6644,7 @@ footer {
   width: 100%;
   height: 100%;
   padding: 20px; }
-  .front .view-sponsors .field-content img {
+  .view-sponsors .field-content img {
     width: auto;
     height: auto; }
 

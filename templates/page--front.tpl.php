@@ -77,7 +77,7 @@
 <div class="nav-outer container-fluid fixed">
   <div id="navbar" class="container navbar navbar-default">
 
-    <a class="navbar-brand" href="index.html"><img id="globe" height="45" width="auto" src="http://localhost/foss4g/sites/all/themes/foss4g/globe.png"></a>
+    <a class="navbar-brand" href="/"><img id="globe" height="45" width="auto" src="http://localhost/foss4g/sites/all/themes/foss4g/globe.png"></a>
 
     <div class="navbar-header">
 
