@@ -1,0 +1,244 @@
+html, body {
+    font-size: 100%;
+}
+
+.mapscroll {
+    background-image: url(/foss4g/sites/all/themes/foss4g/images/melways.png);
+    background-attachment: fixed;
+    height: 50px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.4;
+    border-top: 1px solid $gray-base;
+    border-bottom: 1px solid $gray-base;
+}
+
+// Header and navigation
+header {
+    margin-bottom: 20px;
+    position: relative;
+    top: 65px;
+}
+
+.navbar.container {
+    margin-top: 0;
+}
+
+.nav-outer {
+    height: 65px;
+    border-top: 5px solid #00b5d4;
+    background: $gray-lighter;
+    &.fixed {
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+
+.navbar {
+    background-color: inherit;
+    border: none;
+    min-height: auto;
+    cursor: pointer;
+    #superfish-1 {
+        display: block;
+        margin-top: 20px;
+        padding-left: 40px;
+        li {
+            padding: 0 1.5em 0 0 ;
+            &.active-trail {
+                color: $main-dark;
+            }
+            &:hover {
+                color: $main-dark;
+        
+            }
+        }
+        ul {
+            background: $gray-lighter;
+            border-bottom: 3px solid $main-dark;
+            li {
+                padding: 10px 0 10px 10px;
+                a {
+                    color: $gray-base;
+                }
+            }
+        }
+    }
+}
+
+.navbar-brand {
+    padding: 5px 40px 5px 10px;
+}
+
+.sf-sub-indicator {
+    position: initial;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    text-indent: -999em;
+}
+
+#logo {
+    display: inline-block;
+    background: $main-light;
+    padding: 20px 0;
+    width: 100%;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+}
+
+.main-date {
+    text-align: center;
+    font-size: 1.5em;
+    color: $gray-darker;
+
+}
+
+//Page elements
+
+.breadcrumb {
+    background-color: inherit;
+}
+
+// Footer
+
+footer {
+    background: darken($main-dark, 30%);
+    color: white;
+}
+
+//Front page
+
+.front {
+    .main-container {
+        position: relative;
+        top: 45px;
+        .region {
+        margin-top: 100px;
+        }
+    }
+    .region-content {
+
+        p {
+            font-size: 1.4em;
+            text-align: center;
+        }
+    }
+    footer {
+        position: relative;
+        top: 45px;
+    }
+}
+
+// Blocks front
+
+.front {
+    .region-front-blocks {
+        line-height: 2em;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: space-around;
+        h2 {
+            margin-bottom: 20px;
+            border-bottom: 3px dotted lighten($gray-light, 10%);
+            padding-bottom: 20px;
+            // padding-top: 60px;
+        }
+        .block {
+            width: 30%;
+            // padding: 70px 30px 30px 30px;
+            border: thin solid $main-dark;
+        }
+        #block-block-3 {
+            background-image: url(/foss4g/sites/all/themes/foss4g/images/tram.png);
+            background-size: auto 50px;
+            background-repeat: no-repeat;
+            background-position: center 20px;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+        #block-block-4 {
+            background-image: url(/foss4g/sites/all/themes/foss4g/images/station.svg);
+            background-size: auto 50px;
+            background-repeat: no-repeat;
+            background-position: center 20px;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+        #block-block-5 {
+            background-image: url(/foss4g/sites/all/themes/foss4g/images/coffee.jpg);
+            background-size: auto 50px;
+            background-repeat: no-repeat;
+            background-position: center 20px;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+    }
+}
+
+//Sponsors front
+
+.front {
+    h2 {
+        text-transform: uppercase;
+        color: darken($main-dark, 30%);
+        text-align: center;
+        font-size: 2em;
+    }
+    h3 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.8em;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    .view-sponsors {
+        h3 {
+            color: $main-light;
+        }
+        ul {
+            padding: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .wrap {
+            padding: 20px;
+            list-style: none;
+            position: relative;
+            width: 100%;
+            display: inline-block;
+            max-width: 24%;
+            min-width: 270px;
+            height: 0;
+            padding-top: 18%;
+        }
+        .field-content  {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        //    background-color: $gray-lighter;
+           position: absolute;
+           left: 0;
+           top: 0;
+           width: 100%;
+           height: 100%;
+           padding: 20px;
+           img {
+                   width: auto;
+                   height: auto;
+               }
+       }
+
+    }   
+}
