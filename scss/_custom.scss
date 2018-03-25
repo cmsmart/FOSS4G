@@ -6,6 +6,9 @@ body {
     margin-top: 65px;
 }
 
+body.cke_editable {
+    margin-top: 10px;
+}
 
 // Header and navigation
 header {
@@ -79,7 +82,7 @@ header {
 }
 
 .mapscroll {
-    background-image: url(/foss4g/sites/all/themes/foss4g/images/melways.png);
+    background-image: url(sites/all/themes/foss4g/images/osm_melbs.png);
     background-attachment: fixed;
     height: 50px;
     -webkit-filter: grayscale(100%);
@@ -172,7 +175,7 @@ footer {
             border: thin solid $main-dark;
         }
         #block-block-3 {
-            background-image: url(/foss4g/sites/all/themes/foss4g/images/tram.png);
+            background-image: url(sites/all/themes/foss4g/images/tram.png);
             background-size: auto 50px;
             background-repeat: no-repeat;
             background-position: center 20px;
@@ -180,7 +183,7 @@ footer {
             filter: grayscale(100%);
         }
         #block-block-4 {
-            background-image: url(/foss4g/sites/all/themes/foss4g/images/station.svg);
+            background-image: url(sites/all/themes/foss4g/images/station.svg);
             background-size: auto 50px;
             background-repeat: no-repeat;
             background-position: center 20px;
@@ -188,7 +191,7 @@ footer {
             filter: grayscale(100%);
         }
         #block-block-5 {
-            background-image: url(/foss4g/sites/all/themes/foss4g/images/coffee.jpg);
+            background-image: url(sites/all/themes/foss4g/images/coffee.jpg);
             background-size: auto 50px;
             background-repeat: no-repeat;
             background-position: center 20px;

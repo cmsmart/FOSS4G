@@ -6464,6 +6464,9 @@ html, body {
 body {
   margin-top: 65px; }
 
+body.cke_editable {
+  margin-top: 10px; }
+
 header {
   margin-bottom: 20px; }
 
@@ -6493,12 +6496,12 @@ header {
     .navbar #superfish-1 li {
       padding: 0 1.5em 0 0; }
       .navbar #superfish-1 li.active-trail {
-        color: #00b5d4; }
+        color: #25B7D3; }
       .navbar #superfish-1 li:hover {
-        color: #00b5d4; }
+        color: #25B7D3; }
     .navbar #superfish-1 ul {
       background: #f8f8f8;
-      border-bottom: 3px solid #00b5d4; }
+      border-bottom: 3px solid #25B7D3; }
       .navbar #superfish-1 ul li {
         padding: 10px 0 10px 10px; }
         .navbar #superfish-1 ul li a {
@@ -6520,7 +6523,7 @@ header {
   text-indent: -999em; }
 
 .mapscroll {
-  background-image: url(/foss4g/sites/all/themes/foss4g/images/melways.png);
+  background-image: url(sites/all/themes/foss4g/images/osm_melbs.png);
   background-attachment: fixed;
   height: 50px;
   -webkit-filter: grayscale(100%);
@@ -6531,7 +6534,7 @@ header {
 
 #logo {
   display: inline-block;
-  background: #ace1ff;
+  background: #B2E4ff;
   padding: 20px 0;
   width: 100%; }
   #logo img {
@@ -6555,7 +6558,7 @@ header {
   margin-top: 30px; }
 
 footer {
-  background: #00323b;
+  background: #0e4651;
   color: white; }
 
 .front .main-container .region {
@@ -6581,23 +6584,23 @@ footer {
   .front .region-front-blocks .block {
     width: 30%;
     padding: 30px;
-    border: thin solid #00b5d4; }
+    border: thin solid #25B7D3; }
   .front .region-front-blocks #block-block-3 {
-    background-image: url(/foss4g/sites/all/themes/foss4g/images/tram.png);
+    background-image: url(sites/all/themes/foss4g/images/tram.png);
     background-size: auto 50px;
     background-repeat: no-repeat;
     background-position: center 20px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
   .front .region-front-blocks #block-block-4 {
-    background-image: url(/foss4g/sites/all/themes/foss4g/images/station.svg);
+    background-image: url(sites/all/themes/foss4g/images/station.svg);
     background-size: auto 50px;
     background-repeat: no-repeat;
     background-position: center 20px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
   .front .region-front-blocks #block-block-5 {
-    background-image: url(/foss4g/sites/all/themes/foss4g/images/coffee.jpg);
+    background-image: url(sites/all/themes/foss4g/images/coffee.jpg);
     background-size: auto 50px;
     background-repeat: no-repeat;
     background-position: center 20px;
@@ -6606,7 +6609,7 @@ footer {
 
 .front h2 {
   text-transform: uppercase;
-  color: #00323b;
+  color: #0e4651;
   text-align: center;
   font-size: 2em; }
 .front h3 {
@@ -6617,7 +6620,7 @@ footer {
   margin-top: 30px; }
 
 .view-sponsors h3 {
-  color: #ace1ff; }
+  color: #B2E4ff; }
 .view-sponsors ul {
   padding: 0;
   margin: 0 auto;
@@ -6679,8 +6682,8 @@ footer {
     color: #a5a5a5; }
 
   .navbar .navbar-toggle:hover, .navbar-default .navbar-toggle:hover {
-    border-color: #f5dc00;
-    background-color: #ace1ff; }
+    border-color: #f8cf25;
+    background-color: #B2E4ff; }
     .navbar .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar {
       background-color: #fff; }
 
