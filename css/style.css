@@ -5904,7 +5904,6 @@ body {
   z-index: 1610; }
 
 .footer {
-  margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
   border-top: 1px solid #E5E5E5; }
@@ -6561,14 +6560,25 @@ footer {
   background: #0e4651;
   color: white; }
 
+.social {
+  display: flex;
+  justify-content: center; }
+  .social .svg-inline--fa.fa-w-16,
+  .social .svg-inline--fa,
+  .social .svg-inline--fa.fa-w-9 {
+    height: 2em;
+    width: 2em;
+    margin: 5px; }
+
 .front .main-container .region {
   margin-top: 100px; }
 .front .region-content p {
   font-size: 1.4em;
   text-align: center; }
 .front footer {
-  position: relative;
-  top: 45px; }
+  position: relative; }
+.front .footer_top {
+  margin-top: 45px; }
 
 .front .region-front-blocks {
   line-height: 2em;
@@ -6584,24 +6594,24 @@ footer {
   .front .region-front-blocks .block {
     width: 30%;
     padding: 30px;
-    border: thin solid #25B7D3; }
+    border: thin solid #bbbbbb; }
+  .front .region-front-blocks #block-block-2 {
+    background-image: url(/sites/all/themes/foss4g/images/tram2.png);
+    background-size: auto 60px;
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
   .front .region-front-blocks #block-block-3 {
-    background-image: url(/sites/all/themes/foss4g/images/tram.png);
-    background-size: auto 50px;
+    background-image: url(/sites/all/themes/foss4g/images/station2.png);
+    background-size: auto 60px;
     background-repeat: no-repeat;
     background-position: center 20px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
   .front .region-front-blocks #block-block-4 {
-    background-image: url(/sites/all/themes/foss4g/images/station.svg);
-    background-size: auto 50px;
-    background-repeat: no-repeat;
-    background-position: center 20px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
-  .front .region-front-blocks #block-block-5 {
-    background-image: url(/sites/all/themes/foss4g/images/coffee.jpg);
-    background-size: auto 50px;
+    background-image: url(/sites/all/themes/foss4g/images/coffee2.png);
+    background-size: auto 60px;
     background-repeat: no-repeat;
     background-position: center 20px;
     -webkit-filter: grayscale(100%);
@@ -6649,6 +6659,38 @@ footer {
   .view-sponsors .field-content img {
     width: auto;
     height: auto; }
+
+.footer_top {
+  background: white;
+  border-top: thin solid #0e4651;
+  padding: 15px; }
+  .footer_top h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.0em;
+    color: #444444;
+    margin: 0; }
+  .footer_top .view-partners .view-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; }
+    .footer_top .view-partners .view-content .views-row {
+      align-self: center; }
+
+.view-committee .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly; }
+  .view-committee .view-content .bio {
+    width: 40%;
+    margin: 30px 5%;
+    text-align: center;
+    line-height: 1.5em; }
+    .view-committee .view-content .bio .img-responsive {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 10px; }
 
 @media (max-width: 767px) {
   .fixed {

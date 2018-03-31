@@ -1,0 +1,19 @@
+// Committee
+
+.view-committee .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    .bio {
+        width: 40%;
+        margin: 30px 5%;
+        text-align: center;
+        line-height: 1.5em;
+        .img-responsive {
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    }
+}

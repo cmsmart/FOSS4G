@@ -133,6 +133,20 @@ footer {
     color: white;
 }
 
+.social {
+    display: flex;
+    justify-content: center;
+    .svg-inline--fa.fa-w-16, 
+    .svg-inline--fa, 
+    .svg-inline--fa.fa-w-9  {
+        height: 2em;
+        width: 2em;
+        margin: 5px;
+    }
+}
+
+
+
 //Front page
 
 .front {
@@ -150,7 +164,9 @@ footer {
     }
     footer {
         position: relative;
-        top: 45px;
+    }
+    .footer_top {
+        margin-top: 45px;
     }
 }
 
@@ -172,27 +188,27 @@ footer {
         .block {
             width: 30%;
             padding: 30px;
-            border: thin solid $main-dark;
+            border: thin solid $gray-light;
         }
-        #block-block-3 {
-            background-image: url(/sites/all/themes/foss4g/images/tram.png);
-            background-size: auto 50px;
+        #block-block-2 {
+            background-image: url(/sites/all/themes/foss4g/images/tram2.png);
+            background-size: auto 60px;
+            background-repeat: no-repeat;
+            background-position: center 20px;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+        #block-block-3{
+            background-image: url(/sites/all/themes/foss4g/images/station2.png);
+            background-size: auto 60px;
             background-repeat: no-repeat;
             background-position: center 20px;
             -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
         }
         #block-block-4 {
-            background-image: url(/sites/all/themes/foss4g/images/station.svg);
-            background-size: auto 50px;
-            background-repeat: no-repeat;
-            background-position: center 20px;
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-        }
-        #block-block-5 {
-            background-image: url(/sites/all/themes/foss4g/images/coffee.jpg);
-            background-size: auto 50px;
+            background-image: url(/sites/all/themes/foss4g/images/coffee2.png);
+            background-size: auto 60px;
             background-repeat: no-repeat;
             background-position: center 20px;
             -webkit-filter: grayscale(100%);
@@ -246,7 +262,6 @@ footer {
        display: flex;
        align-items: center;
        justify-content: center;
-    //    background-color: $gray-lighter;
        position: absolute;
        left: 0;
        top: 0;
@@ -259,3 +274,27 @@ footer {
            }
    }
 } 
+
+// top footer
+
+.footer_top {
+    background: white;
+    border-top: thin solid darken($main-dark, 30%);
+    padding: 15px;
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.0em;
+        color: $gray-base;
+        margin: 0;
+    }
+    .view-partners .view-content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        .views-row {
+            align-self: center;
+        }
+    }
+}
+

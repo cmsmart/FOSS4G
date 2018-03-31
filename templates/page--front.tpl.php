@@ -123,7 +123,7 @@
         <img class="img-responsive" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
       </a>
     <?php endif; ?>
-    <p class="main-date"><span>Melbourne, Australia &nbsp; | &nbsp; November</span> 21-24, 2018</p>
+    <p class="main-date"><span>Melbourne, Australia &nbsp; | &nbsp; November</span> 20-23, 2018</p>
   </div>
   
   <div class="mapscroll"></div>
@@ -180,10 +180,18 @@
   </div>
 </div>
 
-<?php if (!empty($page['footer'])): ?>
-  <footer class="footer <?php print $container_class; ?>">
-  <div class="container">
-    <?php print render($page['footer']); ?>
-  </div>
+<?php if (!empty($page['footer_top'])): ?>
+  <footer class="footer_top <?php print $container_class; ?>">
+      <?php print render($page['footer_top']); ?>
   </footer>
 <?php endif; ?>
+
+<footer class="footer <?php print $container_class; ?>">
+  <div class="container">
+    <?php print render($page['footer']); ?>
+    <div class="social">
+      <div class="social-icon"><a href="https://fb.me/FOSS4gOceania"><i class="fab fa-facebook-f"></i></a></div>
+      <div class="social-icon"><a href="https://twitter.com/foss4g_oceania"><i class="fab fa-twitter"></i></a></div>
+    </div>
+  </div>
+</footer>
