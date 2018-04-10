@@ -6523,6 +6523,7 @@ header {
 
 .mapscroll {
   background-image: url(/sites/all/themes/foss4g/images/osm_melbs.png);
+  background-position-y: -25px;
   background-attachment: fixed;
   height: 50px;
   -webkit-filter: grayscale(100%);
@@ -6560,6 +6561,9 @@ footer {
   background: #0e4651;
   color: white; }
 
+.footer_top {
+  margin-top: 45px; }
+
 .social {
   display: flex;
   justify-content: center; }
@@ -6577,8 +6581,6 @@ footer {
   text-align: center; }
 .front footer {
   position: relative; }
-.front .footer_top {
-  margin-top: 45px; }
 
 .front .region-front-blocks {
   line-height: 2em;
@@ -6673,9 +6675,26 @@ footer {
   .footer_top .view-partners .view-content {
     display: flex;
     justify-content: space-evenly;
+    flex-flow: wrap;
     width: 100%; }
     .footer_top .view-partners .view-content .views-row {
-      align-self: center; }
+      align-self: center;
+      padding: 10px; }
+
+.sf-menu.menu.sf-menu-footer {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0; }
+  .sf-menu.menu.sf-menu-footer li {
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 12px; }
+    .sf-menu.menu.sf-menu-footer li a {
+      color: white; }
+      .sf-menu.menu.sf-menu-footer li a:hover {
+        color: white; }
+      .sf-menu.menu.sf-menu-footer li a:focus {
+        color: white; }
 
 .view-committee .view-content {
   display: flex;
@@ -6748,6 +6767,13 @@ footer {
     position: static;
     padding: 0px; }
     .view-sponsors .field-content img {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+
+  .mapscroll {
+    background-attachment: scroll; } }
+@media (min-width: 1200px) {
+  .main-container.container {
+    width: 1170px;
+    min-height: 45vh; } }
 
 /*# sourceMappingURL=style.css.map */

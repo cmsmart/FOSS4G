@@ -79,4 +79,15 @@
             }
         }
     }
+
+    .mapscroll {
+        background-attachment: scroll;
+    }
  }
+
+@media (min-width: 1200px) {
+    .main-container.container {
+        width: 1170px;
+        min-height: 45vh;
+    }
+}
