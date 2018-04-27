@@ -167,7 +167,7 @@
 <footer class="footer <?php print $container_class; ?>">
   <div class="container">
     <div class="social">
-      <div class="social-icon"><a href="https://fb.me/FOSS4gOceania"><i class="fab fa-facebook-f"></i></a></div>
+      <!-- <div class="social-icon"><a href="https://fb.me/FOSS4gOceania"><i class="fab fa-facebook-f"></i></a></div> -->
       <div class="social-icon"><a href="https://twitter.com/foss4g_oceania"><i class="fab fa-twitter"></i></a></div>
     </div>
     <?php print render($page['footer']); ?>
